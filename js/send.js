@@ -7,6 +7,6 @@ const client = require('twilio')(accountSid, authToken);
 client.messages.create({
 	to: process.env.MY_MOBILE,
 	from: process.env.TWILIO_CONTACT,
-	body: "Some Message 2"
+	body: "Test"
 })
 .then((message) => console.log(message.sid));
